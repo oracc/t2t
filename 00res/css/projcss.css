@@ -1,0 +1,21 @@
+
+h3 { display: block;
+     margin-block-start: 1.33em;
+     margin-block-end: 1.33em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+     font-size: 1.17em;
+     font-style: normal;
+     font-weight: bold;
+     unicode-bidi: isolate;
+   }
+
+h4 { display: block;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+     font-style: italic;
+     font-weight: normal;
+     unicode-bidi: isolate
+   }

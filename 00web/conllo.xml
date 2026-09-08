@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esp:page xmlns:esp="http://oracc.org/ns/esp/1.0" xmlns="http://www.w3.org/1999/xhtml" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xpd="http://oracc.org/ns/xpd/1.0">
+  <esp:name>CoNLL-O</esp:name>
+  <esp:title>CoNLL-O</esp:title>
+  <html>
+    <head/>
+    <body>
+      <p>CoNLL-O is an implementation of the <esp:link
+      url="https://universaldependencies.org/ext-format.html">CoNLL-U
+      Plus Format</esp:link>, as defined by the <esp:link
+      url="https://universaldependencies.org/">Universal
+      Dependencies</esp:link> framework.</p>
+
+      <esp:sh>CoNLL-O Fields</esp:sh>
+
+      <esp:ssh>CoNLL-U Core Fields</esp:ssh>
+      
+      <p>CoNLL-O retains the ten core CoNLL-U fields: ID FORM LEMMA
+      UPOS XPOS FEATS HEAD DEPREL DEPS MISC.</p>
+
+      <p>The fields FORM and LEMMA are given in transliteration
+      because this is a closer reflection of the surface form of the
+      word than the ePSD2 Citation Form which relies on a Guide Word
+      for disambiguation.  Thus, ePSD2's <code>a[water]N</code> and
+      <code>a[arm]N</code> share the Citation Form <code>a</code>; in
+      cuneiform these words are typically written 𒀀 (U+12000) and 𒀉
+      (U+12009) respectively.  In the LEMMA column these words are
+      given as a and a₂ following conventions defined in the <esp:link
+      url="https://oracc.museum.upenn.edu/osl">Oracc Sign
+      List</esp:link> and the <esp:link
+      url="https://oracc.museum.upenn.edu/epsd2/">electronic
+      Pennsylvania Sumerian Dictionary</esp:link>.  We prefer
+      transliteration rather than cuneiform for LEMMA because
+      cuneiform ideograms are typically used to write more than one
+      word--𒀀 (U+12000) is used for a[water]N and duru₅=duru[wet]V/i,
+      for example.</p>
+
+      <p>The extension fields ORACC:FORMC and ORACC:LEMMAC give the
+      corresponding cuneiform.</p>
+      
+      <esp:ssh>CoNLL-O Fields</esp:ssh>
+      
+      <p>CoNLL-O field names are in the ORACC namespace.</p>
+
+      <p>CoNLL-O adds 14 fields which are identical with the fields
+      contained in <esp:link
+      url="https://oracc.museum.upenn.edu/doc/help/lemmatising/signatures/">Oracc
+      lemmatization signatures</esp:link>, as well as several other
+      fields that are not included in an Oracc signature.  The names
+      of these fields are the Oracc signature field name preceded by
+      'ORACC:': ORACC:PROJECT ORACC:LANG ORACC:CF ORACC:GW
+      ORACC:SENSE ORACC:POS ORACC:EPOS ORACC:NORM ORACC:BASE
+      ORACC:CONT ORACC:STEM ORACC:MORPH ORACC:MORPH2 ORACC:RWS.</p>
+
+      <p>Note that the FORM field of Oracc signatures is suppressed in
+      CoNLL-O because it would be identical to the CoNLL-U FORM field
+      and is therefore redundant.</p>
+
+      <p>The only CoNLL-O signature field that is given in
+      transliteration is ORACC:BASE; there is also a corresponding
+      ORACC:BASEC field that gives the cuneiform for ORACC:BASE.</p>
+      
+      <esp:ssh>CoNLL-O Additional Fields</esp:ssh>
+
+      <p>CoNLL-O includes additional fields that relate words to the
+      <esp:link url="https://oracc.museum.upenn.edu/epsd2/">electronic
+      Pennsylvania Sumerian Dictionary</esp:link>.  In Oracc's
+      internal formats these are not embedded in the signatures but
+      they are available in the XML versions of the annotated data for
+      text editions or glossaries: CoNLL-O ensures that these data are
+      available without recourse to external datasets.</p>
+
+      <dl>
+	<dt>ORACC:OID</dt>
+	<dd>The ORACC:OID is the standard Oracc ID for the word.</dd>
+
+	<dt>ORACC:SENSEID</dt>
+	<dd>The ORACC:SENSEID is the Oracc Sense ID: these are derived
+	from the OID plus a dotted subscript, e.g., o0123456.1, etc.
+	The SENSE IDs will be stabilized with the release of ePSD
+	2.8.</dd>
+
+	<dt>ORACC:FORMC</dt>
+	<dd>The CoNLL-U FORM field in Unicode cuneiform.</dd>
+
+	<dt>ORACC:LEMMAC</dt>
+	<dd>The CoNLL-U LEMMA field in Unicode cuneiform.</dd>
+
+	<dt>ORACC:BASEC</dt>
+	<dd>The CoNLL-O BASE field in Unicode cuneiform.</dd>
+
+	<dt>ORACC:LEMDIS</dt>
+	<dd>CoNLL-U does <esp:link
+	url="https://universaldependencies.org/u/overview/morphology.html">not
+	permit homophone disambiguators in the LEMMA field because
+	they are not part of the surface form of the word.</esp:link>
+	The ORACC:LEMDIS column gives a version of the LEMMA (i.e.,
+	the transliterated form of the Citation Form) combined with a
+	subscript consisting of a hyphen followed by digits (e.g.,
+	a[arm]N = a₂-1; a[time]N => a₂-2).</dd>
+      </dl>
+            
+    </body>
+  </html>
+</esp:page>
