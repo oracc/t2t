@@ -71,6 +71,7 @@
       available without recourse to external datasets.</p>
 
       <dl>
+
 	<dt>ORACC:OID</dt>
 	<dd>The ORACC:OID is the standard Oracc ID for the word.</dd>
 
@@ -98,6 +99,18 @@
 	the transliterated form of the Citation Form) combined with a
 	subscript consisting of a hyphen followed by digits (e.g.,
 	a[arm]N = a₂-1; a[time]N => a₂-2).</dd>
+
+	<dt>ORACC:WORDID</dt>
+	<dd>Oracc assigns an XML:ID to each word which consists of the
+	CDLI/ORACC text ID (<code>[PQX][0-9]{,6}</code>) and two
+	dotted subscripts of which the first is the line ID component
+	and the second the word ID component (e.g., P123456.1.1).</dd>
+
+	<dt>ORACC:LABEL</dt>
+	<dd>Oracc computes a human-readable label for each line which
+	is guaranteed unique within the document. The label for
+	obverse, column 1, line 1 is 'o i 1'.  This column may include
+	space characters.</dd>
       </dl>
             
     </body>
