@@ -13,14 +13,31 @@
 
       <esp:sh>CoNLL-O Document Metadata</esp:sh>
 
-      <p>CoNLL-O uses standard CoNLL document metadata. The newdoc ID
-      is a CDLI/Oracc catalogue number. Two additional metadata
-      comments are also given. The comment <code># docname</code>
-      gives a common name or designation for the document referenced
-      by the newdoc ID.  The comment <code># atffile</code> gives the
-      ATF source file which is the ultimate source of the CoNLL-O
-      data; this is for use in data interchange in combination with
-      the ORACC:ATFLW field described below.</p>
+      <p>CoNLL-O provides the standard CoNLL document metadata with
+      some additions. The newdoc ID is a CDLI/Oracc catalogue
+      number.</p>
+
+      <esp:ssh>CoNLL-O Document Additions</esp:ssh>
+      
+      <dl>
+	<dt><code># docname</code></dt>
+	<dd>gives a common name or designation for the document
+	referenced by the newdoc ID. This can be used with the
+	ORACC:LINELABEL field to create human readable labels for word
+	occurrences.</dd>
+
+	<dt><code># project</code></dt>
+	<dd>gives the Oracc project for the source data.  This can be
+	used in combination with ORACC:WORDID or ORACC:LINEID to
+	create URLs that link to the highlighted word or line.</dd>
+	
+	<dt><code># atffile</code></dt>
+	<dd>gives the ATF source file which is the ultimate source of
+	the CoNLL-O data; when CoNLL-O is used for data interchange
+	<code>atffile</code> can be used in combination with the
+	ORACC:ATFLW field to align annotation with the source
+	document.</dd>
+      </dl>
 
       <esp:sh>CoNLL-O Sentences</esp:sh>
 
@@ -68,13 +85,15 @@
       lemmatization signatures</esp:link>, as well as several other
       fields that are not included in an Oracc signature.  The names
       of these fields are the Oracc signature field name preceded by
-      'ORACC:': ORACC:PROJECT ORACC:LANG ORACC:CF ORACC:GW
-      ORACC:SENSE ORACC:POS ORACC:EPOS ORACC:NORM ORACC:BASE
-      ORACC:CONT ORACC:STEM ORACC:MORPH ORACC:MORPH2.</p>
+      'ORACC:': ORACC:LANG ORACC:CF ORACC:GW ORACC:SENSE ORACC:POS ORACC:EPOS
+      ORACC:NORM ORACC:BASE ORACC:CONT ORACC:STEM ORACC:MORPH
+      ORACC:MORPH2.</p>
 
       <p>Note that the FORM field of Oracc signatures is suppressed in
       CoNLL-O because it would be identical to the CoNLL-U FORM field
-      and is therefore redundant.</p>
+      and is therefore redundant.  The PROJECT field of Oracc
+      signatures is also suppressed because that is given in the
+      document header.</p>
 
       <p>The only CoNLL-O signature field that is given in
       transliteration is ORACC:BASE; there is also a corresponding
@@ -110,6 +129,7 @@
 	<dt>ORACC:BASEC</dt>
 	<dd>The CoNLL-O BASE field in Unicode cuneiform.</dd>
 
+	<!--
 	<dt>ORACC:LEMDIS</dt>
 	<dd>CoNLL-U does <esp:link
 	url="https://universaldependencies.org/u/overview/morphology.html">not
@@ -119,7 +139,8 @@
 	the transliterated form of the Citation Form) combined with a
 	subscript consisting of a hyphen followed by digits (e.g.,
 	a[arm]N = a₂-1; a[time]N => a₂-2).</dd>
-
+	-->
+	
 	<dt>ORACC:WORDID</dt>
 	<dd>Oracc assigns an XML:ID to each word which consists of the
 	CDLI/ORACC text ID (<code>[PQX][0-9]{,6}</code>) and two
