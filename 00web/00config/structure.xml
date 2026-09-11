@@ -5,4 +5,5 @@
         file="home.xml" id="home" accesskey="1" type="page">
   <struct:page file="t2t.xml" id="t2t" accesskey="3" type="page"/>
   <struct:page file="conllo.xml" id="conllo" accesskey="2" type="page"/>
+  <struct:page file="gudea56.xml" id="gudea56" accesskey="3" type="page"/>
 </struct:page>

@@ -6,15 +6,24 @@
     <head/>
     <body>
       <p>The Penn CoNLL Corpus of Sumerian is building a complete
-  corpus of Sumerian texts in a version of the CoNLL format (named
-  CoNLL-O) that is used by machine translation systems.  The corpus is
-  combined from all Sumerian subcorpora that are available in
-  machine-readable format, leaning heavily on the work of other
-  projects such as CDLI, ETCSL, and ePSD2.  PCCS is developed using an
-  augmented form of the (slightly divergent) Oracc/CDLI/eBL standard
-  ATF which is then enriched using Oracc's annotation pipeline.  The
-  generated CoNLL-O corpus is intended to be suitable for use both for
-  machine translation and for Universal Dependencies work.</p>
+      corpus of Sumerian texts in a version of the CoNLL format (named
+      CoNLL-O) that is used by machine translation systems.  The
+      corpus is combined from all Sumerian subcorpora that are
+      available in machine-readable format, leaning heavily on the
+      work of other projects such as CDLI, ETCSL, and ePSD2.  PCCS is
+      developed using an augmented form of the (slightly divergent)
+      Oracc/CDLI/eBL standard ATF which is then enriched using Oracc's
+      annotation pipeline.  The generated CoNLL-O corpus is intended
+      to be suitable for use both for machine translation and for
+      Universal Dependencies work.</p>
+
+      <p>In its initial versions, PCCS will focus on translation,
+      lemmatization and multi-word expressions, with the result that
+      the dependency fields are underspecified.</p>
+
+      <p>A very preliminary sample PCCS file <esp:link
+      page="gudea56">is available here.</esp:link></p>
+      
     </body>
   </html>
 </esp:page>
