@@ -3,8 +3,9 @@
         xmlns:struct="http://oracc.org/ns/esp-struct/1.0"
         xmlns="http://www.w3.org/1999/xhtml"
         file="home.xml" id="home" accesskey="1" type="page">
-  <struct:page file="t2t.xml" id="t2t" accesskey="3" type="page"/>
-  <struct:page file="conllo.xml" id="conllo" accesskey="2" type="page"/>
-  <struct:page file="gudea56.xml" id="gudea56" accesskey="3" type="page"/>
+  <struct:page file="pccs-home.xml" id="t2t" accesskey="1" type="page">
+    <struct:page file="conllo.xml" id="conllo" accesskey="2" type="page"/>
+    <struct:page file="gudea56.xml" id="gudea56" accesskey="3" type="page"/>
+  </struct:page>
   <struct:page file="wordnet.xml" id="wordnet" accesskey="4" type="page"/>
 </struct:page>

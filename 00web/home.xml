@@ -1,29 +1,95 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <esp:page xmlns:esp="http://oracc.org/ns/esp/1.0" xmlns="http://www.w3.org/1999/xhtml" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xpd="http://oracc.org/ns/xpd/1.0">
-  <esp:name>Home</esp:name>
-  <esp:title>Penn CoNLL Corpus of Sumerian</esp:title>
+  <esp:name>Tablet to Translation</esp:name>
+  <esp:title>Tablet to Translation</esp:title>
   <html>
     <head/>
     <body>
-      <p>The Penn CoNLL Corpus of Sumerian is building a complete
-      corpus of Sumerian texts in a version of the CoNLL format (named
-      CoNLL-O) that is used by machine translation systems.  The
-      corpus is combined from all Sumerian subcorpora that are
-      available in machine-readable format, leaning heavily on the
-      work of other projects such as CDLI, ETCSL, and ePSD2.  PCCS is
-      developed using an augmented form of the (slightly divergent)
-      Oracc/CDLI/eBL standard ATF which is then enriched using Oracc's
-      annotation pipeline.  The generated CoNLL-O corpus is intended
-      to be suitable for use both for machine translation and for
-      Universal Dependencies work.</p>
 
-      <p>In its initial versions, PCCS will focus on translation,
-      lemmatization and multi-word expressions, with the result that
-      the dependency fields are underspecified.</p>
+      <p><i>Tablet to Translation</i> (T2T) aims to advance the state of the
+      art in machine reading of original clay manuscripts written in
+      Sumerian cuneiform and machine translation of Sumerian.  The
+      initial phases of the project, funded with a generous three-year
+      gift, will work on creating resources for machine translation
+      (MT) as well as carrying out systematic testing and evaluation
+      of modern MT approaches; another branch of our work will involve
+      conservation, digitization, and sign-recognition experiments
+      with the remaining unpublished Ur III administrative fragments
+      currently held in the Penn Museum.</p>
 
-      <p>A very preliminary sample PCCS file <esp:link
-      page="gudea56">is available here.</esp:link></p>
-      
+      <esp:sh>Prior Work</esp:sh>
+
+      <p>T2T owes much to previous work in corpus-building and
+      computational analysis and will engage with other related
+      efforts.  Prior work is exemplified by publications such as the
+      following:</p>
+
+<ul>
+  <li>Shai Gordin, Aleksi Sahala et al., <esp:link
+  url="https://aclanthology.org/2025.alp-1.33.pdf"> EvaCun 2025
+  Shared Task: Lemmatization and Token Prediction in Akkadian and
+  Sumerian using LLMs</esp:link></li>
+
+  <li>Bansal, Choudhary, et al.,
+  <esp:link url="https://aclanthology.org/2021.acl-srw.5.pdf">
+  How Low is Too Low? A Computational Perspective on Extremely
+  Low-Resource Languages</esp:link></li>
+
+  <li><p>Gordin and Romach, <esp:link
+  url="https://anetoday.org/gordin-romach-digital-cuneiform/"> The
+  Cuneiform Wide Web: From Card Catalogues to Digital
+  Assyriology</esp:link></p>
+  <p>provides a useful synthesis of the various
+  requirements and potentials of automated interpretation of cuneiform
+  documents.</p>
+  </li>
+
+  <li><p>Punia, Shenk et al.,
+  <esp:link url="https://aclanthology.org/2020.coling-main.308.pdf">
+  Towards the First Machine Translation System for Sumerian Transliterations</esp:link></p>
+  <p>Presents results from the Machine Translation and Automated
+  Analysis of Cuneiform Languages project run by Émilie Pagé-Perron from
+  2017-2020 and based on the CDLI Ur III corpus.</p></li>
+
+  <li>Hamplová, Romach, et al.,
+  <esp:link url="https://dhq-static.digitalhumanities.org/pdf/000733.pdf">
+  Cuneiform Stroke Recognition and Vectorization in 2D
+  Images</esp:link></li>
+
+</ul>
+
+      <esp:sh>Approach</esp:sh>
+
+      <p>We will work on building/improving translation resources in several ways:</p>
+      <ol>
+	<li>
+	  <p>Create a database of commodities and translations for the
+	  Ur III administrative corpus</p>
+	  <p>There is an extensive secondary literature on matters
+	  such as age and sex designations of domesticated animals,
+	  technical terms associated with the production processes for
+	  wool, felt, ceramics, etc., dissertations on metal-working
+	  terminology, food, crops, and so on. This literature would
+	  be reviewed in order to provide translations of a list of
+	  commodities derived directly from the Ur III corpus:
+	  preliminary work suggest that there are approximately 5000
+	  commodities that occur at least twice in the corpus.</p>
+	</li>
+	<li>
+	  <p>Create a reference set of translations of court records, letters, and contracts</p>
+	  <p>We will utilize existing published translations of these
+	  document types where possible and also translate additional
+	  texts.</p>
+	</li>
+	<li>
+	  <p>Revise and update existing translations of Sumerian non-administrative texts</p>
+	  <p>The ETCSL corpus created paragraph-oriented translations
+	  of the bulk of the Old Babylonian Sumerian corpus. These
+	  need to be updated and need to be revised so that
+	  translation units correspond to Sumerian sentences in order
+	  to support the creation of the <esp:link
+	  page="conllo">CoNLL-O version of the corpus</esp:link>.</p>
+	</li>
+      </ol>
     </body>
   </html>
 </esp:page>

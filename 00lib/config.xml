@@ -1,21 +1,12 @@
-<project n="pccs" 
+<project n="t2t" 
     xmlns="http://oracc.org/ns/xpd/1.0"
     xmlns:xpd="http://oracc.org/ns/xpd/1.0">
-  <name>Penn CoNLL Corpus of Sumerian</name>
-  <abbrev>PCCS</abbrev>
+  <name>Tablet to Translation</name>
+  <abbrev>T2T</abbrev>
   <project-type>user</project-type>
   <type>corpus</type>
   <logo type="text">PCCS</logo>
-  <blurb>The Penn CoNLL Corpus of Sumerian is building a complete
-  corpus of Sumerian texts in a version of the CoNLL format (named
-  CoNLL-O) that is used by machine translation systems.  The corpus is
-  combined from all Sumerian subcorpora that are available in
-  machine-readable format, leaning heavily on the work of other
-  projects such as CDLI, ETCSL, and ePSD2.  PCCS is developed using an
-  augmented form of the (slightly divergent) Oracc/CDLI/eBL standard
-  ATF which is then enriched using Oracc's annotation pipeline.  The
-  generated CoNLL-O corpus is intended to be suitable for use both for
-  machine translation and for Universal Dependencies work.</blurb>
+  <blurb>Tablet to Translation (T2T) is a new, gift-funded project aims to advance the state of the art in machine reading of original clay manuscripts written in Sumerian cuneiform and machine translation of Sumerian.  The initial phases of the project, funded with a generous three-year gift, will work on creating resources for machine translation (MT) as well as carrying out systematic testing and evaluation of modern MT approaches; another branch of our work will involve conservation, digitization, and sign-recognition experiments with the remaining unpublished Ur III administrative fragments currently held in the Penn Museum.</blurb>
   <option name="catalog-build-policy" value="auto"/>
   <option name="cbd-no-harvest" value="pccs epsd2 epsd2/names"/>
   <option name="cbd-oid" value="yes"/>
